@@ -40,7 +40,7 @@ const Container = () => {
           <p className="navbar-item text-red-500 text-xl">Login</p>
         </div>
 
-        <div className="w-full  mt-8">
+        <div className="w-full relative mt-8 flex">
           <div className=" w-[23.2%]">
             <h1 className="title">hunter 350</h1>
 
@@ -52,6 +52,9 @@ const Container = () => {
               point—and it certainly isn’t generic
             </p>
           </div>
+          <div className="absolute left-[36%] -top-6">
+                  <Image src="/assets/emblem.svg" alt="Icon 1" width={275} height={275} />
+                </div>
         </div>
 
         <div className="relative ml-[44px] -mt-[222px] h-[548px] group  overflow-visible">
@@ -83,20 +86,24 @@ const Container = () => {
         </div>
       </div>
 
-      <div className=" card w-[37.3%] h-fit flex flex-col pl-6 pr-8 pt-13 pb-12 ">
-        <div className="relative width-full h-[360px] rounded-[20px] overflow-clip ">
-          <Image src="/assets/container2-bg-crop-2.jpg" alt="Background" fill />
-          <div className="absolute top-0 right-0 h-full w-[35%] bg-[#0A0A0A5C] text-start flex items-center container-text justify-center pl-4 pr-3">
-            <p className="opacity-90">
-              At the heart of the Hunter beats a fuel-injected, long-stroke
-              350cc J-engine that delivers a smoother ride, higher RPM and
-              dollops of torque. Paired with a steady downtube spine frame and
-              grounded suspension, the Hunter 350 gives the right amount of
-              power and precision, whether you’re revving up the city streets or
-              gunning down the motorway.
-            </p>
-          </div>
-        </div>
+      <div className=" card w-[37.3%] h-fit flex flex-col pl-6 pr-8 pt-13 pb-6 ">
+        <div className="relative width-full h-[360px] rounded-[20px] overflow-clip group">
+  <Image src="/assets/container2-bg-crop-2.jpg" alt="Background" fill />
+  <div className="absolute top-0 right-0 h-full w-[35%] bg-[#0A0A0A5C] text-start flex items-center container-text justify-center pl-4 pr-3">
+    <p className="opacity-90">
+      At the heart of the Hunter beats a fuel-injected, long-stroke
+      350cc J-engine that delivers a smoother ride, higher RPM and
+      dollops of torque. Paired with a steady downtube spine frame and
+      grounded suspension, the Hunter 350 gives the right amount of
+      power and precision, whether you’re revving up the city streets or
+      gunning down the motorway.
+    </p>
+  </div>
+  <div className="absolute bottom-3 right-0 w-[182px] h-[36px] flex items-center justify-evenly  bg-[#FF0000] rounded-[5px]  opacity-0 group-hover:opacity-100 transition-opacity duration-[1500ms] z-20">
+    <span className="  navbar-item text-[20px] ">book a Test Drive</span>
+<span className="navbar-item text-[26px] ">&gt;</span>
+  </div>
+</div>
 
         <div className="w-full mt-11 h-[170px]  flex gap-5">
           <div
@@ -121,7 +128,7 @@ const Container = () => {
               <span  className="navbar-item featured-text">
                 highlights
               </span>
-              <span className="navbar-item featured-text">
+              <span className="navbar-item featured-text underline underline-offset-8 ">
                 gallery
               </span>
               <span className="navbar-item featured-text">
@@ -135,10 +142,38 @@ const Container = () => {
         </div>
 
 
-        <div className="w-full mt-2 h-[137px]  bg-red-500">
+        <div className="w-full mt-4 h-[137px] px-4">
+  <div className="h-full w-full flex gap-4 items-center justify-between">
+    <div className="flex-1 flex flex-col items-center justify-center  rounded-[10px] h-full">
+      <Image src="/assets/icon1.svg" alt="Icon 1" width={62} height={56} />
+      <span className="mt-7  navbar-item featured-text">Find a store</span>
+    </div>
+    <div className="flex-1 flex flex-col items-center justify-center  rounded-[10px] h-full">
+      <Image src="/assets/icon2.svg" alt="Icon 2" width={62} height={56} />
+      <span className="mt-7  navbar-item featured-text">book a service</span>
+    </div>
+    <div className="flex-1 flex flex-col items-center justify-center  rounded-[10px] h-full">
+      <Image src="/assets/icon3.svg" alt="Icon 3" width={62} height={56} />
+      <span className="mt-7  navbar-item featured-text">customer support</span>
+    </div>
+  </div>
+</div>
 
-        </div>
+<div className="flex  items-center pl-16  justify-between mt-6 gap-2">
+    <div className="w-full h-[1px] bg-[#A1A1A1]">
 
+    </div>
+    
+
+    
+    <Image 
+    src="/assets/royalenfield.png"
+    alt="Arrow"
+    width={81}
+    height={65}
+    className=" object-cover -mr-6"        
+    />
+</div>
 
       </div>
     </div>
